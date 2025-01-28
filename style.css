@@ -1,4 +1,103 @@
-html {
-    background-color: black;
-    color: beige;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    /* Colors */
+    --blanc-cassé: #FFFEFA; 
+    --maron-clair: #EADEC8;
+    --maron: #C9B29C;
+    --maron-foncé: #7A655A;
+    --vert-clair: #E7EAC8;
+    --vert: #CBD4AF;
+    --vert-focé: #9FBD75;
+    --jaune-clair: #FBDED0;
+    --jaune: #F0CCA8;
+    --jaune-foncé: #E5B24D;
+    --rouge-clair: #EAC8D6;
+    --rouge: #D2ACB2;
+    --rouge-foncé: #BD7575;
+    /* Style */
+    --angles-arondis: 10px;
+    --nav-height: 60px;
+    --fullscreen: calc(100vh - var(--nav-height));
+  }
+
+* {
+    font-family: "League Spartan", serif;
+    margin: 0px;
 }
+
+body {
+    background-color: var(--blanc-cassé);
+    color: var(--maron-foncé);
+}
+
+footer {
+    height: 450px;
+    background-color: var(--maron-foncé);
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-height);
+    width: 100%;
+    background-color: var(--maron-foncé);
+}
+
+nav > a {
+    font-size: 2.5em;
+    font-weight: 850;
+}
+
+a {
+    color: var(--blanc-cassé);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 850;
+}
+
+#hero {
+    padding-top: var(--nav-height);
+    height: var(--fullscreen);
+    background-image: url(medias/ouvriers-bâtiment.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#projet {
+    padding-top: var(--nav-height);
+    height: var(--fullscreen);
+}
+
+#fonctionnalites {
+    padding-top: var(--nav-height);
+    height: var(--fullscreen);
+}
+
+#about-us {
+    padding-top: var(--nav-height);
+    height: var(--fullscreen);
+}
+
+#contact-button {
+    background-color: var(--blanc-cassé);
+    color: var(--maron-foncé);
+    border-radius: var(--angles-arondis);
+};
+
+/* Forms */
+form {
+    width: 300px;
+}
+
+input {
+    margin: 10px;
+}
+
