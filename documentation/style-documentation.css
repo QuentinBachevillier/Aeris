@@ -1,0 +1,18 @@
+#list li{
+    list-style: none;
+}
+.les-liens{
+    color: var(--maron-fonc);
+    text-decoration: aquamarine; 
+
+}
+{
+    font-family: "League Spartan", serif;
+    margin: 50px;
+}
+
+#Titredoc {
+    justify-self: center;
+    padding: 30px;
+}
+

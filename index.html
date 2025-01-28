@@ -11,89 +11,172 @@
  <body>
     <header>
       
-      <section>
-
-         <nav>
-            <a href="#top">AERIS</a>
-            <div>
-               <a href="#projet">Projet</a>
-               <a href="#fonctionnalites">Fonctonnalités</a>
-               <a href="#about-us">L'équipe AERIS</a>
-               <a href="documentation.html" target="_blank">Documentation</a>
-               <a id="contact-button" href="#contact">Nous Contacter</a>
-            </div>
-         </nav>
-
-      </section>
+      <nav>
+         <a href="#top">AERIS</a>
+         <div>
+            <a href="#projet">Projet</a>
+            <a href="#fonctionnalites">Fonctonnalités</a>
+            <a href="#about-us">L'équipe AERIS</a>
+            <a href="documentation/documentation.html" target="_blank">Documentation</a>
+            <a href="#contact"><button>Nous Contacter</button></a>
+         </div>
+      </nav>
 
       <section id="hero">
-         <div>
             <h1>AERIS</h1>
             <p>Construisez un avenir durable grâce à des chantiers respectueux de l'environnement.</p>
             <p>Soyez en conformité avec les normes en vigueur. Notre application vous accompagne dans la gestion de la qualité de l'air.</p>
-            <a href="">En savoir plus</a>
-         </div>
+            <a href=""><button>En savoir plus</button></a>
       </section>
 
     </header>
 
-    <section>
+    <section id="counter">
 
       <h2>Ils nous font confiance</h2>
 
-      <div class="card">
-         <img src="" alt="">
-         <p></p>
-         <p></p>
-      </div>
+      <div>
+         <div class="counter-card">
+            <i class="fa-solid fa-people-roof"></i>
+            <p></p>
+            <p></p>
+         </div>
 
-      <div class="card">
-         <img src="" alt="">
-         <p></p>
-         <p></p>
-      </div>
+         <div class="counter-card">
+            <i class="fa-solid fa-tree-city"></i>
+            <p></p>
+            <p></p>
+         </div>
 
-      <div class="card">
-         <img src="" alt="">
-         <p></p>
-         <p></p>
+         <div class="counter-card">
+            <i class="fa-solid fa-helmet-safety"></i>
+            <p></p>
+            <p></p>
+         </div>
       </div>
 
     </section>
 
     <section id="projet">
-      <h2>Présentation du projet</h2>
+      <h2>Un peu de contexte</h2>
+      <div></div>
+      <img src="" alt="">
     </section>
 
     <section id="fonctionnalites">
       <h2>Comment ça fonctionne ?</h2>
+
+      <section id="dashboard">
+         <img src="" alt="">
+         <div>
+            <h3>Dashboard</h3>
+            <p></p>
+         </div>
+      </section>
+
+      <section id="rapports">
+         <div>
+            <h3>Mesures efficaces</h3>
+            <p></p>
+         </div>
+         <img src="" alt="">
+      </section>
+
+      <section id="perso-rapports">
+         <img src="" alt="">
+         <div>
+            <h3>Personnalisez les mesures</h3>
+            <p></p>
+         </div>
+      </section>
+
+      <section id="rapport">
+         <div>
+            <h3>Rapport</h3>
+            <p></p>
+         </div>
+         <img src="" alt="">
+      </section>
+
     </section>
 
     <section id="about-us">
       <h2>Qui sommes nous ?</h2>
+      <p></p>
+
+      <div>
+
+         <div class="profile-card">
+            <img src="" alt="">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+         </div>
+
+         <div class="profile-card">
+            <img src="" alt="">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+         </div>
+
+         <div class="profile-card">
+            <img src="" alt="">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+         </div>
+
+         <div class="profile-card">
+            <img src="" alt="">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+         </div>
+
+         <div class="profile-card">
+            <img src="" alt="">
+            <h3></h3>
+            <h4></h4>
+            <p></p>
+         </div>
+
+      </div>
     </section>
 
     <footer>
 
-      <div>
-
+      <div class="footer-left">
+         <div class="download">
+            <a id="footer-logo" href="#top">AERIS</a>
+            <a href="https://play.google.com/store/apps?hl=fr">
+               <img src="medias/Icons/google_play_fr.svg" alt="playstore">
+            </a>
+            <a href="https://www.apple.com/fr/app-store/">
+               <img src="medias/Icons/app_store_fr.svg" alt="appstore">
+            </a>
+         </div>
+         <div class="site-plan">
+            <ul>
+               <li><a href="#projet">Projet</a></li>
+               <li><a href="#fonctionnalites">Fonctonnalités</a></li>
+               <li><a href="#about-us">L'équipe AERIS</a></li>
+               <li><a href="documentation/documentation.html" target="_blank">Documentation</a></li>
+            </ul>      
+         </div>
       </div>
 
       <div id="contact">
          <form action="">
-            <div>
-               <input id="email" type="email" name="email" placeholder="Votre email..." required />
-             </div>
-            <div>
-               <input id="message" type="text" name="message" placeholder="Votre message..." required />
-             </div>
-             <div>
-               <input type="submit" value="Envoyer" />
-             </div>
+            <input id="email" type="email" name="email" placeholder=" Votre email..." required/>
+            <textarea name="message" id="" rows="8" cols="50" placeholder=" Votre message..." required></textarea>
+            <button type="submit">Envoyer</button>
          </form>
       </div>
 
     </footer>
+
+    <script src="https://kit.fontawesome.com/2d7ed0d845.js" crossorigin="anonymous"></script>
  </body>
 
  </html>
