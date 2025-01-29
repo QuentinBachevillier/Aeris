@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-@import url("documentation/style-documentation.css");
 
 :root {
     /* Colors */
@@ -21,7 +20,7 @@
     --angles-arondis: 10px;
     --angles-arondis-boutons: 1000px;
     --nav-height: 60px;
-    --fullscreen: calc(100vh - var(--nav-height));
+    --fullscreen: calc(720px - var(--nav-height) - 50px);
   }
 
 * {
@@ -60,10 +59,6 @@ nav a {
 }
 
 /* Sections */
-section {
-    padding-top: var(--nav-height);
-    padding-bottom: 50px;
-}
 
 #hero {
     display: flex;
@@ -91,7 +86,7 @@ section {
 #counter {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: var(--fullscreen);
     background-color: var(--maron-clair-transparence);
@@ -105,42 +100,100 @@ section {
 }
 
 .counter-card {
-    height: 100%;
-    width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 90%;
+    width: 20%;
     background-color: var(--maron-clair);
     border-radius: var(--angles-arondis);
-    
+}
+
+.counter-number {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.fullscreen {
+    height: var(--fullscreen);
+    padding-top: var(--nav-height);
+    padding-bottom: 50px;
+}
+
+.maron-clair {
+    background-color: var(--maron-clair);
 }
 
 #projet {
     height: var(--fullscreen);
 }
 
+#projet > div {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
 /* Fonctionnalités */
 #fonctionnalites {
+    padding-top: var(--nav-height);
     background-color: var(--maron-clair-transparence);
 }
 
-#fonctionnalites > #dashboard {
-    height: var(--fullscreen);
-} 
+#fonctionnalites h2 {
+    padding-bottom: 0px;
+}
 
-#fonctionnalites > #rapports {
-    height: var(--fullscreen);
-    background-color: var(--maron-clair);
-} 
-
-#fonctionnalites > #perso-rapports {
-    height: var(--fullscreen);
-} 
-
-#fonctionnalites > #rapport {
-    height: var(--fullscreen);
-    background-color: var(--maron-clair);
-} 
+#fonctionnalites .fullscreen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 75px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
 
 #about-us {
-    height: var(--fullscreen);
+    
+}
+
+#about-us > p {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 200px;
+    gap: 10px;
+    background-color: var(--maron-clair);
+    border-radius: var(--angles-arondis);
+}
+
+.profile-card img {
+    width: 50%;
+    height: auto;
+}
+
+.profile-card p {
+    text-align: center;
+    font-size: .8em;
 }
 
 /* Inlines */
@@ -150,12 +203,33 @@ h1 {
 }
 
 h2 {
-    padding-bottom: var(--nav-height) 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: var(--nav-height);
+}
+
+h3 {
+    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+p {
+    font-size: 1.3em;
 }
 
 a {
     color: var(--blanc-cassé);
     text-decoration: none;
+}
+
+i {
+    font-size: 65px;
+}
+
+img {
+    height: 400px;
+    width: auto;
 }
 
 button {
@@ -166,14 +240,39 @@ button {
     padding: 10px 15px;
     font-size: 1em;
     font-weight: 500;
+    transition: transform 0.5s, background-color 0.5s, color 0.5s;
 }
 
+button:hover {
+    transform: scale(1.07);
+    background-color: var(--maron);
+    color: var(--blanc-cassé);
+}
+
+
 footer {
+    height: 300px;
+    background-color: var(--maron-foncé);
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
-    background-color: var(--maron-foncé);
+    margin: 20px 60px;
+}
+
+footer p {
+    font-size: .8em;
+    color: white;
+    margin-left: 60px;
+    
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
 }
 
 #footer-logo {
@@ -181,26 +280,57 @@ footer {
     font-weight: 850;
 }
 
+
 .download {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+}
+
+.download img {
+    border: white 1px solid;
+    width: 136px;
+    height: auto;
+}
+
+.site-plan {
+    border-left: white 1px solid;
+}
+
+.site-plan ul li {
+    margin: 20px;
 }
 /* Forms */
 form {
     width: 300px;
     height: 200px;
+    margin-top: 30px;
 }
 
 form > input, textarea, button {
     margin: 3px auto;
 }
 
+form button {
+    background-color: var(--maron-clair);
+}
+
 input {
     height: 25px;
 }
+
 input, textarea {
     width: 280px;
-    border-radius: 10px;
+    border-radius: var(--angles-arondis);
     border: none;
 }
 
+input::placeholder, textarea::placeholder {
+    color: var(--maron);
+    padding: 5px;
+}
+
+
+/* textarea::placeholder {
+    color: var(--maron);
+}   */

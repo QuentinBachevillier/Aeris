@@ -1,18 +1,54 @@
+
+
+@import url("../style.css");
+
 #list li{
     list-style: none;
 }
 .les-liens{
     color: var(--maron-fonc);
-    text-decoration: aquamarine; 
+    text-decoration: underline;
+    font-weight: bold;
 
 }
-{
-    font-family: "League Spartan", serif;
+
+    /* font-family: "League Spartan", serif;
     margin: 50px;
-}
+} */
 
+section {
+    padding:80px;
+}
 #Titredoc {
-    justify-self: center;
+    width: 100%;
+    text-align: center;
     padding: 30px;
 }
 
+.les-images{
+width: 50%;
+height: 30%;
+}
+
+#cible{
+    display: flex;
+}
+
+ .margedoc {
+
+    margin-top: 80px;  
+    margin-bottom: 80px;
+
+
+}
+
+#firstsection{
+    margin-top: auto;
+}
+
+
+
+p ul li {
+    font-size: 1.3em;
+
+}
