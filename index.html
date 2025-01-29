@@ -1,193 +1,219 @@
 <!-- Page d'acceuil et de présentation de l'application que vous proposez (comme si vous deviez la vendre)-->
- <!DOCTYPE html>
- <html lang="fr">
- <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Aeris</title>
- </head>
+<!DOCTYPE html>
+<html lang="fr">
 
- <body>
-    <header>
-      
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Landing Page Aeris</title>
+</head>
+
+<body>
+   <header>
+
       <nav>
          <a href="#top">AERIS</a>
          <div>
             <a href="#projet">Projet</a>
             <a href="#fonctionnalites">Fonctonnalités</a>
             <a href="#about-us">L'équipe AERIS</a>
-            <a href="documentation/documentation.html" target="_blank">Documentation</a>
+            <a href="documentation/documentation.html">Documentation</a>
             <a href="#contact"><button>Nous Contacter</button></a>
          </div>
       </nav>
 
       <section id="hero" class="fullscreen">
-            <h1>AERIS</h1>
-            <p>Construisez un avenir durable grâce à des chantiers respectueux de l'environnement.</p>
-            <p>Soyez en conformité avec les normes en vigueur. Notre application vous accompagne dans la gestion de la qualité de l'air.</p>
-            <a href=""><button>En savoir plus</button></a>
+         <h1>AERIS</h1>
+         <p>Construisez un avenir durable grâce à des chantiers respectueux de l'environnement.</p>
+         <p>Soyez en conformité avec les normes en vigueur. Notre application vous accompagne dans la gestion de la
+            qualité de l'air.</p>
+         <a href=""><button>En savoir plus</button></a>
       </section>
 
-    </header>
+   </header>
 
-    <section id="counter" class="fullscreen">
+   <main>
 
-      <h2>Ils nous font confiance</h2>
+      <section id="counter" class="fullscreen">
 
-      <div>
-         <div class="counter-card">
-            <i class="fa-solid fa-people-roof"></i>
-            <p class="counter-number">20</p>
-            <h3>Communes conquises</h3>
-         </div>
-
-         <div class="counter-card">
-            <i class="fa-solid fa-tree-city"></i>
-            <p class="counter-number">64</p>
-            <h3>Chantiers équipés</h3>
-         </div>
-
-         <div class="counter-card">
-            <i class="fa-solid fa-helmet-safety"></i>
-            <p class="counter-number">576</p>
-            <h3>Ouvriers protégés</h3>
-         </div>
-      </div>
-
-    </section>
-
-    <section id="projet" class="fullscreen">
-      
-      <h2>Un peu de contexte</h2>
-
-      <div>
+         <h2>Ils nous font confiance</h2>
 
          <div>
-            <h3>Les 17 Objectifs de l'ONU</h3>
+            <div class="counter-card">
+               <i class="fa-solid fa-people-roof"></i>
+               <p class="counter-number">20</p>
+               <h3>Communes conquises</h3>
+            </div>
+
+            <div class="counter-card">
+               <i class="fa-solid fa-tree-city"></i>
+               <p class="counter-number">64</p>
+               <h3>Chantiers équipés</h3>
+            </div>
+
+            <div class="counter-card">
+               <i class="fa-solid fa-helmet-safety"></i>
+               <p class="counter-number">576</p>
+               <h3>Ouvriers protégés</h3>
+            </div>
+         </div>
+
+      </section>
+
+      <section id="projet" class="fullscreen">
+
+         <h2>Un peu de contexte</h2>
+
+         <div>
+
             <div>
+               <h3>Les 17 Objectifs de l'ONU</h3>
+               <div>
+                  <p>
+                     En septembre 2015, l’Organisation des Nations Unies définit 17 Objectifs de Développement Durable à
+                     atteindre horizon 2030.
+                  </p>
+                  <p>
+                     L’un d’eux à été au centre de notre projet, il s’agit de La Bonne Santé et Le Bien Être, plus
+                     précisément la qualité de l’air.
+                  </p>
+               </div>
                <p>
-                  En septembre 2015, l’Organisation des Nations Unies définit 17 Objectifs de Développement Durable à atteindre horizon 2030.
+                  Au cours de nos recherches, nous nous sommes rendus compte que l’un des acteurs clé de ce sujet était
+                  le
+                  secteur du BTP, en effet celui-ci est responsable de 23% des émissions de gaz à effet de serre.
                </p>
                <p>
-                  L’un d’eux à été au centre de notre projet, il s’agit de La Bonne Santé et Le Bien Être, plus précisément la qualité de l’air.
+                  Nous avons donc imaginés AERIS, une application pour accompagner les responsables QHSE des chantiers
+                  du
+                  BTP dans leur analyse de données, prise d’action et communication avec les ouvriers sur le terrain.
                </p>
             </div>
-            <p>
-               Au cours de nos recherches, nous nous sommes rendus compte que l’un des acteurs clé de ce sujet était le secteur du BTP, en effet celui-ci est responsable de 23% des émissions de gaz à effet de serre.
-            </p>
-            <p>
-               Nous avons donc imaginés AERIS, une application pour accompagner les responsables QHSE des chantiers du BTP dans leur analyse de données, prise d’action et communication avec les ouvriers sur le terrain.
-            </p>
-         </div>
 
             <img src="medias/batiments-construction.png" alt="">
 
-      </div>
-      
-    </section>
-
-    <section id="fonctionnalites">
-      <h2>Comment ça fonctionne ?</h2>
-
-      <section id="dashboard" class="fullscreen">
-         <img src="medias/Fonctionnalites/dashboard.png" alt="">
-         <div>
-            <h3>Dashboard</h3>
-            <p>
-               Cette première page vous permettra de visualiser le chantier sur lequel vous vous trouvez et les différents capteurs, ainsi que leur position. 
-            </p>
-            <p>
-               En dessous, on peut voir les différentes sources possible de pollution. Vous avez également la possibilité de voir la qualité de l’air et les dernières informations, y compris les différents composant et leur taux dans l’air. 
-            </p>
          </div>
+
       </section>
 
-      <section class="fullscreen maron-clair">
-         <div>
-            <h3>Mesures efficaces</h3>
-            <p>
-               Si vous cliquer sur une source possible de pollution, vous aurez la possibilité, d’avoir des mesures à prendre, afin de savoir comment agir et protéger les employés, en leur envoyant un rapport que vous pourrez modifier avant . 
-            </p>
-         </div>
-         <img src="medias/Fonctionnalites/mesure.png" alt="">
+      <section id="fonctionnalites">
+         <h2>Comment ça fonctionne ?</h2>
+
+         <section id="dashboard" class="fullscreen">
+            <img class="img-shadow" src="medias/Fonctionnalites/dashboard.png" alt="">
+            <div>
+               <h3>Dashboard</h3>
+               <p>
+                  Cette première page vous permettra de visualiser le chantier sur lequel vous vous trouvez et les
+                  différents capteurs, ainsi que leur position.
+               </p>
+               <p>
+                  En dessous, on peut voir les différentes sources possible de pollution. Vous avez également la
+                  possibilité de voir la qualité de l’air et les dernières informations, y compris les différents
+                  composant
+                  et leur taux dans l’air.
+               </p>
+            </div>
+         </section>
+
+         <section class="fullscreen maron-clair">
+            <div>
+               <h3>Mesures efficaces</h3>
+               <p>
+                  Si vous cliquer sur une source possible de pollution, vous aurez la possibilité, d’avoir des mesures à
+                  prendre, afin de savoir comment agir et protéger les employés, en leur envoyant un rapport que vous
+                  pourrez modifier avant .
+               </p>
+            </div>
+            <img class="img-shadow" src="medias/Fonctionnalites/mesure.png" alt="">
+         </section>
+
+         <section id="perso-mesure" class="fullscreen">
+            <img class="img-shadow" src="medias/Fonctionnalites/perso-mesure.png" alt="">
+            <div>
+               <h3>Personnalisez les mesures</h3>
+               <p>
+                  Chaque chantier est différent, c’est pourquoi vous pourrez personnaliser et préciser les mesures pour
+                  s’adapter aux besoins de votre chantier.
+               </p>
+               <p>
+                  Vous pourrez ensuite les ajouter a votre rapport du mois en cours.
+               </p>
+            </div>
+         </section>
+
+         <section class="fullscreen maron-clair">
+
+            <div>
+
+               <h3>Rapport</h3>
+
+               <p>
+                  Bénéficiez de rapports préremplis, vous pouvez le modifier en rajoutant un commentaire ou des pièces
+                  jointes ou d’autres mesures à votre plan d’action.
+               </p>
+               <p>
+                  Vous pouvez aussi accéder à vos anciens rapports à tous moments.
+               </p>
+            </div>
+            <img class="img-shadow" src="medias/Fonctionnalites/rapport.png" alt="">
+         </section>
+
       </section>
 
-      <section id="perso-mesure" class="fullscreen">
-         <img src="medias/Fonctionnalites/perso-mesure.png" alt="">
-         <div>
-            <h3>Personnalisez les mesures</h3>
-            <p>
-               Chaque chantier est différent, c’est pourquoi vous pourrez personnaliser et préciser les mesures pour s’adapter aux besoins de votre chantier.
-            </p>
-            <p>
-               Vous pourrez ensuite les ajouter a votre rapport du mois en cours.
-            </p>
-         </div>
-      </section>
+      <section id="about-us" class="fullscreen">
 
-      <section class="fullscreen maron-clair">
-         <div>
-            <h3>Rapport</h3>
-            <p>
-               Bénéficiez de rapports préremplis, vous pouvez le modifier en rajoutant un commentaire ou des pièces jointes ou d’autres mesures à votre plan d’action. 
-            </p>
-            <p>
-               Vous pouvez aussi accéder à vos anciens rapports à tous moments. 
-            </p>
-         </div>
-         <img src="medias/Fonctionnalites/rapport.png" alt="">
-      </section>
-
-    </section>
-
-    <section id="about-us" class="fullscreen">
          <h2>Qui sommes nous ?</h2>
+
          <p>
-            L’équipe de développement d’AERIS est composée de 5 étudiants en développement web du programme La Toile de L’Em Lyon Business School. En l’espace de 12 jours ils ont eu à imaginer une solution. 
+            L’équipe de développement d’AERIS est composée de 5 étudiants en développement web du programme La Toile de
+            L’Em Lyon Business School. En l’espace de 12 jours ils ont eu à imaginer une solution.
             AERIS en est né.
          </p>
          <div class="card-container">
 
-            <div class="profile-card">
+            <div class="profile-card img-shadow">
                <img src="medias/profile/hayden.png" alt="">
                <h3>Hayden</h3>
                <h4>Cheffe de projet</h4>
                <p>Programme La Toile de L’Em Lyon Business School</p>
             </div>
-   
-            <div class="profile-card">
+
+            <div class="profile-card img-shadow">
                <img src="medias/profile/ayana.png" alt="">
                <h3>Samantha</h3>
                <h4>Développeuse Front-end</h4>
                <p>Programme La Toile de L’Em Lyon Business School</p>
             </div>
-   
-            <div class="profile-card">
+
+            <div class="profile-card img-shadow">
                <img src="medias/profile/brenda.png" alt="">
                <h3>Brenda</h3>
                <h4>Développeuse Front-end</h4>
                <p>Programme La Toile de L’Em Lyon Business School</p>
             </div>
-   
-            <div class="profile-card">
+
+            <div class="profile-card img-shadow">
                <img src="medias/profile/mathis.png" alt="">
                <h3>Mathis</h3>
                <h4>Designer - Développeur</h4>
                <p>Programme La Toile de L’Em Lyon Business School</p>
             </div>
-   
-            <div class="profile-card">
+
+            <div class="profile-card img-shadow">
                <img src="medias/profile/nur.png" alt="">
                <h3>Nur</h3>
                <h4>Designer - Développeuse</h4>
                <p>Programme La Toile de L’Em Lyon Business School</p>
             </div>
-   
-         </div>
-    </section>
 
-    <footer>
+         </div>
+      </section>
+
+   </main>
+
+   <footer>
 
       <div class="footer-container">
          <div class="footer-left">
@@ -206,23 +232,23 @@
                   <li><a href="#fonctionnalites">Fonctonnalités</a></li>
                   <li><a href="#about-us">L'équipe AERIS</a></li>
                   <li><a href="documentation/documentation.html" target="_blank">Documentation</a></li>
-               </ul>      
+               </ul>
             </div>
          </div>
          <form action="">
-            <input id="email" type="email" name="email" placeholder=" Votre email..." required/>
-            <textarea name="message" id="" rows="8" cols="50" placeholder=" Votre message..." required></textarea>
+            <input id="email" type="email" name="email" placeholder="Votre email..." required />
+            <textarea name="message" id="" rows="8" cols="50" placeholder="Votre message..." required></textarea>
             <button type="submit">Envoyer</button>
          </form>
       </div>
-   
+
       <p>
          © AERIS 2025 - Tous droits réservés | Mentions légales
       </p>
-      
-    </footer>
 
-    <script src="https://kit.fontawesome.com/2d7ed0d845.js" crossorigin="anonymous"></script>
- </body>
+   </footer>
 
- </html>
+   <script src="https://kit.fontawesome.com/2d7ed0d845.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

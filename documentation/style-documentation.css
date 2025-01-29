@@ -2,27 +2,59 @@
 
 @import url("../style.css");
 
-#list li{
+li{
     list-style: none;
 }
-.les-liens{
-    color: var(--maron-fonc);
-    text-decoration: underline;
-    font-weight: bold;
 
+aside ul {
+    padding: 0px;
+}
+
+aside li {
+    padding-top: 10px;
+    transition: transform 0.3s;
+}
+
+aside li:hover {
+    transform: translate(10px);
+}
+
+li > a {
+    color: var(--maron-foncé);
 }
 
     /* font-family: "League Spartan", serif;
     margin: 50px;
 } */
 
-section {
-    padding:80px;
+body {
+    background-color: var(--maron-clair);
 }
-#Titredoc {
+
+.footer-container {
+    margin-top: 0px;
+}
+
+.site-plan a{
+    color: var(--blanc-cassé);
+}
+
+main {
+    background-color: var(--blanc-cassé);
+    margin-left: 200px;
+    padding: 50px 100px;
+}
+
+aside {
+    padding: 30px;
+    margin-top: var(--nav-height);
+    position: fixed;
+}
+
+h1 {
+    padding-top: calc(var(--nav-height) + 30px);
     width: 100%;
     text-align: center;
-    padding: 30px;
 }
 
 .les-images{
@@ -30,25 +62,77 @@ width: 50%;
 height: 30%;
 }
 
-#cible{
+#cible div{
     display: flex;
+    align-items: center;
+    gap: 70px;
 }
 
- .margedoc {
-
-    margin-top: 80px;  
-    margin-bottom: 80px;
-
-
+#cible img {
+    height: 350px;
+    width: auto;
 }
 
-#firstsection{
-    margin-top: auto;
+section {
+
+    padding-top: calc(var(--nav-height) + 30px);
+}
+
+iframe {
+    margin: 50px 10px;
+}
+
+.logo-container{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-container a img {
+    width: auto;
+    height: 90px;
+}
+
+#pourquoi div {
+    margin: 1.5px;
+    padding: 1.5px;
+}
+
+#pourquoi a {
+    color: var( --maron-foncé);
+    text-decoration: underline ;
+    font-weight: bold;
+}
+
+#quoi-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#quoi-container img {
+    height: 100px;
+    width: auto;
 }
 
 
+#quoi-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-p ul li {
-    font-size: 1.3em;
+#comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
 
+#comment img {
+    width: 90%;
+}
+
+#doc-sommaire {
+    font-weight: 700;
 }

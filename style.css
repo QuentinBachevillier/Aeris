@@ -118,7 +118,7 @@ nav a {
 
 .fullscreen {
     height: var(--fullscreen);
-    padding-top: var(--nav-height);
+    padding-top: calc(var(--nav-height) + 30px);
     padding-bottom: 50px;
 }
 
@@ -138,9 +138,13 @@ nav a {
     padding-right: 75px;
 }
 
+.img-shadow {
+    box-shadow: 5px 5px 15px hsla(0, 0%, 50%, 0.2);
+}
+
 /* Fonctionnalités */
 #fonctionnalites {
-    padding-top: var(--nav-height);
+    padding-top: calc(var(--nav-height) + 30px);
     background-color: var(--maron-clair-transparence);
 }
 
@@ -155,10 +159,6 @@ nav a {
     gap: 75px;
     padding-left: 75px;
     padding-right: 75px;
-}
-
-#about-us {
-    
 }
 
 #about-us > p {
@@ -215,7 +215,11 @@ h3 {
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.3em
+}
+
+div p {
+    margin: 15px 0px;
 }
 
 a {
@@ -329,8 +333,3 @@ input::placeholder, textarea::placeholder {
     color: var(--maron);
     padding: 5px;
 }
-
-
-/* textarea::placeholder {
-    color: var(--maron);
-}   */
