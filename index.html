@@ -35,35 +35,27 @@
 
    <main>
 
-      <section id="counter" class="fullscreen">
-
-         <h2>Ils nous font confiance</h2>
-
-         <div>
-            <div class="counter-card">
-               <i class="fa-solid fa-people-roof"></i>
-               <p class="counter-number">20</p>
-               <h3>Communes conquises</h3>
+      <section id="app-mockup">
+         <div id="container-app">
+            <div id="left">
+               <h3>AERIS, votre allier à porter de main</h3>
+               <ul>
+                  <li>Tableau de bord simple et informative</li>
+                  <li>Personnaliser les mesures</li>
+                  <li>Modifier le rapport</li>
+               </ul>
+               <div>
+                  <a href=""><button id="btn1">Découvrir</button></a>
+                  <a href=""><button id="btn2">Télécharger</button></a>
+               </div>
             </div>
-
-            <div class="counter-card">
-               <i class="fa-solid fa-tree-city"></i>
-               <p class="counter-number">64</p>
-               <h3>Chantiers équipés</h3>
-            </div>
-
-            <div class="counter-card">
-               <i class="fa-solid fa-helmet-safety"></i>
-               <p class="counter-number">576</p>
-               <h3>Ouvriers protégés</h3>
-            </div>
+            <img src="medias/tab-mockup.svg" alt="">
          </div>
-
       </section>
 
       <section id="projet" class="fullscreen">
 
-         <h2>Un peu de contexte</h2>
+         <h2>Contexte</h2>
 
          <div>
 
@@ -71,8 +63,8 @@
                <h3>Les 17 Objectifs de l'ONU</h3>
                <div>
                   <p>
-                     En septembre 2015, l’Organisation des Nations Unies définit 17 Objectifs de Développement Durable à
-                     atteindre horizon 2030.
+                     En septembre 2015, l’Organisation des Nations Unies définit 17 Objectifs de Développement 
+                     Durable à atteindre horizon 2030.
                   </p>
                   <p>
                      L’un d’eux à été au centre de notre projet, il s’agit de La Bonne Santé et Le Bien Être, plus
@@ -80,14 +72,14 @@
                   </p>
                </div>
                <p>
-                  Au cours de nos recherches, nous nous sommes rendus compte que l’un des acteurs clé de ce sujet était
-                  le
-                  secteur du BTP, en effet celui-ci est responsable de 23% des émissions de gaz à effet de serre.
+                  Au cours de nos recherches, nous nous sommes rendus compte que l’un des acteurs clé de ce sujet 
+                  était le secteur du BTP, en effet celui-ci est responsable de 23% des émissions de gaz à effet de 
+                  serre.
                </p>
                <p>
-                  Nous avons donc imaginés AERIS, une application pour accompagner les responsables QHSE des chantiers
-                  du
-                  BTP dans leur analyse de données, prise d’action et communication avec les ouvriers sur le terrain.
+                  Nous avons donc imaginés AERIS, une application pour accompagner les responsables QHSE des 
+                  chantiers du BTP dans leur analyse de données, prise d’action et communication avec les ouvriers 
+                  sur le terrain.
                </p>
             </div>
 
@@ -97,7 +89,46 @@
 
       </section>
 
+      <section id="chiffres" >
+
+         <h2>Quelques chiffres</h2>
+
+         <p>
+            La pollution atmosphérique est l’un des plus grands risques environnementaux pour la santé.
+         </p>
+         <div class="chiffres-card">
+            <h3>99%</h3>
+            <p>
+               En 2019, 99 % de la population mondiale vivaient dans des endroits où les seuils préconisés 
+               dans les lignes directrices de l’OMS relatives à la qualité de l’air n’étaient pas respectés.
+            </p>
+         </div>
+         <div class="chiffres-card">
+            <h3>99%</h3>
+            <p>
+               En 2019, 99 % de la population mondiale vivaient dans des endroits où les seuils préconisés 
+               dans les lignes directrices de l’OMS relatives à la qualité de l’air n’étaient pas respectés.
+            </p>
+         </div>
+         <div class="chiffres-card">
+            <h3>99%</h3>
+            <p>
+               En 2019, 99 % de la population mondiale vivaient dans des endroits où les seuils préconisés 
+               dans les lignes directrices de l’OMS relatives à la qualité de l’air n’étaient pas respectés.
+            </p>
+         </div>
+         <div class="chiffres-card">
+            <h3>99%</h3>
+            <p>
+               En 2019, 99 % de la population mondiale vivaient dans des endroits où les seuils préconisés 
+               dans les lignes directrices de l’OMS relatives à la qualité de l’air n’étaient pas respectés.
+            </p>
+         </div>
+         <a href="">Source : OMS</a>
+      </section>
+
       <section id="fonctionnalites">
+
          <h2>Comment ça fonctionne ?</h2>
 
          <section id="dashboard" class="fullscreen">
@@ -105,14 +136,15 @@
             <div>
                <h3>Dashboard</h3>
                <p>
-                  Cette première page vous permettra de visualiser le chantier sur lequel vous vous trouvez et les
-                  différents capteurs, ainsi que leur position.
+                  Page pricipale de notre application, le Dashboard vous permetteras en un coup d'oeil de visualiser 
+                  les données récoltées sur un chantier et les sources possibles de pollution de l'air.
                </p>
                <p>
-                  En dessous, on peut voir les différentes sources possible de pollution. Vous avez également la
-                  possibilité de voir la qualité de l’air et les dernières informations, y compris les différents
-                  composant
-                  et leur taux dans l’air.
+                  À gauche, une jauge de qualité de l'air de la zone sélectionnée, les polluants composant cet air 
+                  et enfin une carte détaillée des capteurs positionnés sur le secteur selectionné.
+               </p>
+               <p>
+                  À droite, des prédictions pertinentes de sources de pollution possibles sur votre chantier.
                </p>
             </div>
          </section>
@@ -121,9 +153,8 @@
             <div>
                <h3>Mesures efficaces</h3>
                <p>
-                  Si vous cliquer sur une source possible de pollution, vous aurez la possibilité, d’avoir des mesures à
-                  prendre, afin de savoir comment agir et protéger les employés, en leur envoyant un rapport que vous
-                  pourrez modifier avant .
+                  En sélectionnant une source de pollution nous vous proposeront de nombreuses Mesures efficaces Pour
+                  améliorer significativement la qualité de l'air ou s'en protéger.
                </p>
             </div>
             <img class="img-shadow" src="medias/Fonctionnalites/mesure.png" alt="">
@@ -134,8 +165,8 @@
             <div>
                <h3>Personnalisez les mesures</h3>
                <p>
-                  Chaque chantier est différent, c’est pourquoi vous pourrez personnaliser et préciser les mesures pour
-                  s’adapter aux besoins de votre chantier.
+                  Chaque chantier est différent, c’est pourquoi vous pourrez, à partir de champs préremplis, 
+                  personnaliser et préciser les mesures pour s’adapter aux besoins de votre chantier.
                </p>
                <p>
                   Vous pourrez ensuite les ajouter a votre rapport du mois en cours.
@@ -150,13 +181,17 @@
                <h3>Rapport</h3>
 
                <p>
-                  Bénéficiez de rapports préremplis, vous pouvez le modifier en rajoutant un commentaire ou des pièces
-                  jointes ou d’autres mesures à votre plan d’action.
+                  Vous pouvez y à tous moments, vos Rapports seront votre meilleur outil pour enregistrer et 
+                  communiquer avec votre équipe votre plan d'action du mois et les données récoltées.
                </p>
+
                <p>
-                  Vous pouvez aussi accéder à vos anciens rapports à tous moments.
+                  Bénéficiez de rapports préremplis, vous pouvez le modifier à votre guise ou bien y ajouter des 
+                  pièces jointes ou de nouvelles mesures à votre plan d’action.
                </p>
+               
             </div>
+
             <img class="img-shadow" src="medias/Fonctionnalites/rapport.png" alt="">
          </section>
 
@@ -168,7 +203,7 @@
 
          <p>
             L’équipe de développement d’AERIS est composée de 5 étudiants en développement web du programme La Toile de
-            L’Em Lyon Business School. En l’espace de 12 jours ils ont eu à imaginer une solution.
+            L’Em Lyon Business School. En l’espace de 12 jours ils ont eu à imaginer et prototyper une solution,
             AERIS en est né.
          </p>
          <div class="card-container">
@@ -209,6 +244,32 @@
             </div>
 
          </div>
+      </section>
+
+      <section id="counter" class="fullscreen">
+
+         <h2>Ils nous font confiance</h2>
+
+         <div>
+            <div class="counter-card">
+               <i class="fa-solid fa-people-roof"></i>
+               <p class="counter-number">20</p>
+               <h3>Communes conquises</h3>
+            </div>
+
+            <div class="counter-card">
+               <i class="fa-solid fa-tree-city"></i>
+               <p class="counter-number">64</p>
+               <h3>Chantiers équipés</h3>
+            </div>
+
+            <div class="counter-card">
+               <i class="fa-solid fa-helmet-safety"></i>
+               <p class="counter-number">576</p>
+               <h3>Ouvriers protégés</h3>
+            </div>
+         </div>
+
       </section>
 
    </main>

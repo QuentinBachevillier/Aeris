@@ -62,7 +62,7 @@ width: 50%;
 height: 30%;
 }
 
-#cible div{
+#cible > div{
     display: flex;
     align-items: center;
     gap: 70px;
@@ -131,6 +131,7 @@ iframe {
 
 #comment img {
     width: 90%;
+    height: auto;
 }
 
 #doc-sommaire {

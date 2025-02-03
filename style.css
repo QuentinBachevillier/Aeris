@@ -9,13 +9,13 @@
     --maron-foncé: #7A655A;
     --vert-clair: #E7EAC8;
     --vert: #CBD4AF;
-    --vert-focé: #9FBD75;
+    --vert-focé: #9EB87A;
     --jaune-clair: #FBDED0;
     --jaune: #F0CCA8;
-    --jaune-foncé: #E5B24D;
-    --rouge-clair: #EAC8D6;
-    --rouge: #D2ACB2;
-    --rouge-foncé: #BD7575;
+    --jaune-foncé: #E0B152;
+    --rouge-clair: #E8C9D6;
+    --rouge: #D9A6AE;
+    --rouge-foncé: #BA5E5E;
     /* Style */
     --angles-arondis: 10px;
     --angles-arondis-boutons: 1000px;
@@ -82,7 +82,66 @@ nav a {
 #hero button {
     font-size: 1.2em;
 }
+#app-mockup {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--maron-clair-transparence);
+}
+#container-app {
 
+    display: flex;
+    justify-content: space-around;
+}
+
+#container-app img {
+    width: 40%;
+    height: auto;
+}
+#left {
+    margin-left: 80px;
+}
+
+#left li {
+    padding: 10px;
+}
+#left div {
+    margin-top: 40px;
+}
+#btn2 {
+    background-color: var(--maron-foncé);
+    color: var(--blanc-cassé);
+    margin-left: 20px;
+}
+#btn2:hover {
+    transform: scale(1.07);
+    background-color: var(--maron);
+}
+#chiffres {
+    margin-bottom: 40px;
+}
+#chiffres > p {
+    text-align: center;
+    margin: 20px auto;
+}
+#chiffres a {
+    color: var(--maron-foncé);
+    font-style: italic;
+    margin-left: 80px;
+}
+.chiffres-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 80px;
+    border-radius: var(--angles-arondis);
+    background-color: var(--maron-clair);
+}
+
+.chiffres-card p {
+    margin-left: 20px;
+}
 #counter {
     display: flex;
     flex-direction: column;
@@ -92,12 +151,13 @@ nav a {
     background-color: var(--maron-clair-transparence);
 }
 
-#counter > div{
+#counter > div {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 70%;
 }
+
 
 .counter-card {
     display: flex;
@@ -157,8 +217,8 @@ nav a {
     justify-content: space-between;
     align-items: center;
     gap: 75px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding: 30px 75px;
+
 }
 
 #about-us > p {
@@ -237,7 +297,7 @@ img {
 }
 
 button {
-    background-color: var(--blanc-cassé);
+    background-color: var(--maron-clair);
     color: var(--maron-foncé);
     border-radius: var(--angles-arondis-boutons);
     border: none;
@@ -263,7 +323,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 60px;
+    margin: 0px 60px;
 }
 
 footer p {
@@ -313,10 +373,6 @@ form {
 
 form > input, textarea, button {
     margin: 3px auto;
-}
-
-form button {
-    background-color: var(--maron-clair);
 }
 
 input {
