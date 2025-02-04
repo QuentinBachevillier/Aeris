@@ -23,16 +23,8 @@ li > a {
     color: var(--maron-foncé);
 }
 
-    /* font-family: "League Spartan", serif;
-    margin: 50px;
-} */
-
 body {
     background-color: var(--maron-clair);
-}
-
-.footer-container {
-    margin-top: 0px;
 }
 
 .site-plan a{
@@ -41,8 +33,16 @@ body {
 
 main {
     background-color: var(--blanc-cassé);
-    margin-left: 200px;
-    padding: 50px 100px;
+    margin-left: 175px;
+    padding: 50px 200px;
+}
+
+.highres-img {
+    transition: transform 0.3s;
+}
+
+.highres-img:hover {
+    transform: scale(1.02);
 }
 
 aside {
@@ -62,16 +62,14 @@ width: 50%;
 height: 30%;
 }
 
-#cible > div{
+#cible {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
 }
 
-#cible img {
-    height: 350px;
-    width: auto;
-}
+
 
 section {
 
