@@ -130,7 +130,8 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 60px;
+    padding-top: calc(var(--nav-height) + 30px);
+    padding-bottom: 50px;
 }
 
 #chiffres > div {
