@@ -6,7 +6,8 @@
    <meta charset="UTF-8">
    <link rel="stylesheet" href="style.css">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Landing Page Aeris</title>
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <title>Aeris</title>
 </head>
 
 <body>
@@ -36,8 +37,8 @@
    <main>
 
       <section id="app-mockup">
-         <div id="container-app">
-            <div id="left">
+         <div id="container-app" >
+            <div id="left" data-aos="fade-right" data-aos-duration="3000">
                <h3>AERIS, votre allier à porter de main</h3>
                <ul>
                   <li>Tableau de bord simple et informative</li>
@@ -48,8 +49,8 @@
                   <a href="#prototype"><button id="btn1">Tester</button></a>
                   <a href="https://www.apple.com/fr/app-store/"><button id="btn2">Télécharger</button></a>
                </div>
-            </div>
-            <img src="medias/tab2.svg" alt="">
+            </div >
+            <img src="medias/tab2.svg" alt="" data-aos="fade-left"  data-aos-duration="3000">
          </div>
       </section>
 
@@ -98,28 +99,32 @@
          </p>
          
          <div>
-            <div class="chiffres-card img-shadow">
+            <div class="chiffres-card img-shadow" data-aos="fade-up"
+            data-aos-duration="3000">
                <h3>99%</h3>
                <p>
                   En 2019, 99 % de la population mondiale vivaient dans des endroits où les seuils préconisés 
                   dans les lignes directrices de l’OMS relatives à la qualité de l’air n’étaient pas respectés.
                </p>
             </div>
-            <div class="chiffres-card img-shadow">
+            <div class="chiffres-card img-shadow" data-aos="fade-up"
+            data-aos-duration="3000">
                <h3>6,7 millions</h3>
                <p>
                   Les effets combinés de la pollution de l’air ambiant et de la pollution de l’air intérieur 
                   sont associés à 6,7 millions de décès prématurés par an.
                </p>
             </div>
-            <div class="chiffres-card img-shadow">
+            <div class="chiffres-card img-shadow" data-aos="fade-up"
+            data-aos-duration="3000">
                <h3>4,2 millions</h3>
                <p>
                   En 2019, on estimait à 4,2 millions le nombre de décès prématurés provoqués 
                   par la pollution de l’air ambiant (extérieur) dans le monde.
                </p>
             </div>
-            <div class="chiffres-card img-shadow">
+            <div class="chiffres-card img-shadow" data-aos="fade-up"
+            data-aos-duration="3000">
                <h3>89%</h3>
                <p>
                   Environ 89% de ces décès prématurés sont survenus 
@@ -135,7 +140,23 @@
 
          <h2>Comment ça fonctionne ?</h2>
 
-         <section class="fullscreen">
+         <section id="plan" class="fullscreen">
+            <div>
+               <h3>Créez et modifiez vos plans de chantier</h3>
+               <p>
+                  Vous pourrez créer ou modifier les plan de vos chantiers à tous moments à l'aide de notre éditeur 
+                  de plan.
+               </p>
+               <p>
+                  Facile d'utilisation, vous pourrez aisément ajouter vos capteurs, les placer à leurs emplacement 
+                  et modifier tous leurs paramètres
+               </p>
+            </div>
+            <img src="medias/Fonctionnalites/plan.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+         </section>
+
+         <section class="fullscreen maron-clair">
+            <img class="img-shadow" src="medias/Fonctionnalites/rapport.png" alt="" data-aos="fade-right" data-aos-duration="1500">
             <div>
                <h3>Rapport</h3>
                <p>
@@ -147,11 +168,9 @@
                   pièces jointes ou de nouvelles mesures à votre plan d’action.
                </p>
             </div>
-            <img class="img-shadow" src="medias/Fonctionnalites/rapport.png" alt="">
          </section>
 
-         <section id="dashboard" class="fullscreen maron-clair">
-            <img class="img-shadow" src="medias/Fonctionnalites/dashboard.png" alt="">
+         <section id="dashboard" class="fullscreen">
             <div>
                <h3>Dashboard</h3>
                <p>
@@ -166,9 +185,11 @@
                   À droite, des prédictions pertinentes de sources de pollution possibles sur votre chantier.
                </p>
             </div>
+            <img class="img-shadow" src="medias/Fonctionnalites/dashboard.png" alt="" data-aos="fade-left" data-aos-duration="1500">
          </section>
 
-         <section class="fullscreen">
+         <section class="fullscreen maron-clair">
+            <img class="img-shadow" src="medias/Fonctionnalites/mesure.png" alt="" data-aos="fade-right" data-aos-duration="1500">
             <div>
                <h3>Mesures efficaces</h3>
                <p>
@@ -176,11 +197,9 @@
                   améliorer significativement la qualité de l'air ou s'en protéger.
                </p>
             </div>
-            <img class="img-shadow" src="medias/Fonctionnalites/mesure.png" alt="">
          </section>
 
-         <section id="perso-mesure" class="fullscreen maron-clair">
-            <img class="img-shadow" src="medias/Fonctionnalites/perso-mesure.png" alt="">
+         <section id="perso-mesure" class="fullscreen">
             <div>
                <h3>Personnalisez les mesures</h3>
                <p>
@@ -191,22 +210,10 @@
                   Vous pourrez ensuite les ajouter a votre rapport du mois en cours.
                </p>
             </div>
+            <img class="img-shadow" src="medias/Fonctionnalites/perso-mesure.png" alt="" data-aos="fade-left" data-aos-duration="1500">
          </section>
 
-         <section id="plan" class="fullscreen">
-            <div>
-               <h3>Modifiez vos plans de chantier</h3>
-               <p>
-                  Vous pourrez créer ou modifier les plan de vos chantiers à tous moments à l'aide de notre éditeur 
-                  de plan.
-               </p>
-               <p>
-                  Facile d'utilisation, vous pourrez aisément ajouter vos capteurs, les placer à leurs emplacement 
-                  et modifier tous leurs paramètres
-               </p>
-            </div>
-            <img src="medias/Fonctionnalites/plan.png" alt="">
-         </section>
+         
 
          <section id="prototype" class="fullscreen maron-clair">
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/ESP3Mj4OlE67iZOUg3F0Vq/Projet-de-groupe-Figma?page-id=149%3A11&node-id=534-1327&viewport=-999%2C-226%2C0.56&scaling=contain&content-scaling=fixed&starting-point-node-id=534%3A1327&embed-host=share" allowfullscreen></iframe>
@@ -230,37 +237,47 @@
             L’Em Lyon Business School. En l’espace de 12 jours ils ont eu à imaginer et prototyper une solution,
             AERIS en est né.
          </p>
-         <div class="card-container">
+         <div class="card-container" >
 
-            <div class="profile-card img-shadow">
+            <div class="profile-card img-shadow"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                <img src="medias/profile/hayden.png" alt="">
                <h3>Hayden</h3>
                <h4>Cheffe de projet</h4>
                <p>Aspirante programmeuse</p>
             </div>
 
-            <div class="profile-card img-shadow">
+            <div class="profile-card img-shadow"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                <img src="medias/profile/ayana.png" alt="">
                <h3>Samantha</h3>
                <h4>Développeuse Front-end</h4>
-               <p>Programme La Toile de L’Em Lyon Business School</p>
+               <p>Aspirante chargée de test et recettes</p>
             </div>
 
-            <div class="profile-card img-shadow">
+            <div class="profile-card img-shadow" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                <img src="medias/profile/brenda.png" alt="">
-               <h3>Brenda</h3>
+               <h3>Brenda B</h3>
                <h4>Développeuse Front-end</h4>
-               <p>Programme La Toile de L’Em Lyon Business School</p>
+               <p>Aspirante programmeuse</p>
             </div>
 
-            <div class="profile-card img-shadow">
+            <div class="profile-card img-shadow" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                <img src="medias/profile/mathis.png" alt="">
                <h3>Mathis</h3>
                <h4>Designer - Développeur</h4>
                <p>Programme La Toile de L’Em Lyon Business School</p>
             </div>
 
-            <div class="profile-card img-shadow">
+            <div class="profile-card img-shadow"  data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                <img src="medias/profile/nur.png" alt="">
                <h3>Nur</h3>
                <h4>Designer - Développeuse</h4>
@@ -275,19 +292,19 @@
          <h2>Ils nous font confiance</h2>
 
          <div>
-            <div class="counter-card img-shadow">
+            <div class="counter-card img-shadow" data-aos="zoom-out-up" data-aos-duration="1500">
                <i class="fa-solid fa-people-roof"></i>
                <p class="counter-number">20</p>
                <h3>Communes conquises</h3>
             </div>
 
-            <div class="counter-card img-shadow">
+            <div class="counter-card img-shadow" data-aos="zoom-out-up" data-aos-duration="1500">
                <i class="fa-solid fa-tree-city"></i>
                <p class="counter-number">64</p>
                <h3>Chantiers équipés</h3>
             </div>
 
-            <div class="counter-card img-shadow">
+            <div class="counter-card img-shadow" data-aos="zoom-out-up" data-aos-duration="1500">
                <i class="fa-solid fa-helmet-safety"></i>
                <p class="counter-number">576</p>
                <h3>Ouvriers protégés</h3>
@@ -334,6 +351,10 @@
    </footer>
 
    <script src="https://kit.fontawesome.com/2d7ed0d845.js" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
